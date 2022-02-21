@@ -1,0 +1,135 @@
+$color1: #F0EDEE;
+$color2: #0A090C;
+$color3: #07393C;
+$color4: #2C666E;
+$color5: #90DDF0;
+*{
+    scroll-behavior: smooth !important;
+}
+body{
+    background-color: white !important;
+}
+.mycontainer{
+    display: flex;
+    // padding-top: 50px;
+    background-image:linear-gradient(#2c666e73,#f0edee69),url(../../images/breaking-badb.jpg);
+    // background-attachment: fixed;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    width: 99vw;
+    height: 93vh;
+    .heading{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+        h1{
+            margin-left: 5%;
+        }
+    }
+}
+.type_watch{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
+        a{
+            text-decoration: none;
+            color: $color4;
+            transition: 0.4s;
+            padding: 7px 14px;
+            font-size: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+            
+        }
+        a:hover{
+            font-size: 21px;
+            transform:none;
+            background-color: $color4;
+            border-radius: 30px;
+            color: $color1;
+        }
+    
+}
+.movies{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+  justify-content: space-evenly;
+  text-align: center;
+
+
+    div{
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    img{
+        width: 300px;
+        height: 250px;
+        transition: transform 0.3s, filter 1s ease-in-out;
+        filter: brightness(100%);
+        transform: scale(1.02);
+
+    }
+    img:hover{
+        
+        filter: brightness(120%);
+        
+        transform: scale(1);
+    }
+}
+.post{
+        display: flex;
+        flex-direction: column;
+        
+        .semi_container{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .paragraph_btn{
+            margin-top: 20px;
+            flex-direction: column;
+            a{
+                text-decoration: none; 
+            }
+           
+        }
+        img{
+            width: 35vw;
+        }
+    
+}
+h2{
+    margin-left: 5% !important;
+    margin-top: 5% !important;
+}
+p{
+    font-size: 18px;
+}
+@media screen and  (max-width :768PX ) {
+    .type_watch{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .semi_container{
+        margin-top: 20px !important;
+        flex-direction: column-reverse;
+        margin-left: 5%;
+        // text-align: center;
+        img{
+            width: 90vw;
+           
+        }
+    }
+    .movies{
+        grid-template-columns: 1fr 1fr  ;
+    }
+}
+@media screen and  (max-width :400PX ){
+    .movies{
+        grid-template-columns: 1fr   ;
+    }
+}
