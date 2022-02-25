@@ -1,0 +1,143 @@
+#post_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.post {
+  width: 60vw;
+  height: 80vh;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post_btn {
+  width: 50%;
+  height: 30px;
+}
+
+.pic_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pic_user .pic img {
+  border-radius: 115px;
+  margin-top: 7px;
+  width: 65px;
+}
+
+.pic_user .user {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.this_post {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  border: 0.3px outset;
+}
+
+.post_pic img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.post_comnt {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post_comnt input {
+  width: 95%;
+  border: 0.5px solid;
+  border-radius: 3px;
+  height: 39px;
+  margin-bottom: 45px;
+  margin-right: 12px;
+  padding: 14px;
+}
+
+.post_comnt a {
+  width: 40px;
+  height: 20px;
+}
+
+.pic_user_in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn_send {
+  color: black;
+}
+
+.btn_send :hover {
+  color: #2C666E;
+}
+
+.inputss {
+  border-top: 0.7px solid;
+  border-bottom: 0.7px solid;
+}
+
+.crud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.crud img {
+  width: 40px;
+  height: 40px;
+}
+
+.pic_user_cmnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pic_user_cmnt img {
+  width: 42px;
+}
+
+.pic_user_cmnt .user_cmnt {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.pic_user_cmnt .user_cmnt:hover {
+  color: #2C666E;
+}
+
+.cmnt_btn {
+  margin-bottom: 45px;
+}
+
+.updelet {
+  background-color: white;
+}
+/*# sourceMappingURL=post.css.map */
